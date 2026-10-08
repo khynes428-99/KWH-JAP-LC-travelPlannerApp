@@ -16,3 +16,19 @@ After deciding where the user is traveling, the traveler should be able to view 
 Travelers should be able to choose their preferred mode of transport and view the transportation options available to them.
 ### FR7 Event Menus
 Travelers should be able to view events in the area and be able to register and view pricing for those events.
+
+## Non-Functional Requirements
+### Performance
+all searches should respond within 5 seconds.
+### Security
+all user travel info and login information should be encrypted.
+### Reliability
+The system availability target is 99%
+### Usability
+Travelers should be able to create an itinerary in about 10 mins maximum
+
+## Constraints
+- hosted in github
+- Developed using scrum
+- run in android studio
+- 8-week development schedule
