@@ -29,3 +29,19 @@ Some key features of this software include:
 - Sprint Retrospectives
 
 # Repository Structure
+- /docs       Scrum documents
+
+<pre>
+CarPoolManager/
+│
+├── README.md
+├── .gitignore
+│
+├── docs/
+│   ├── ProductVision.md
+│   ├── RiskRoster.md
+│   ├── AgileSRS.md
+│   └── ProductBacklog.md
+
+
+</pre>
