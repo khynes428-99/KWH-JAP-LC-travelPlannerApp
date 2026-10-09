@@ -1,5 +1,5 @@
 # Team
-Kyle Hynes, Jacob Putt, Levi Courage
+Kyle Hynes, Jacob Putt, Levi Courage.
 
 # Problem Statement
 Our team sets out to create a software planning tool to help people plan their upcoming trips and organize flights. This software will make finding flights, planning travel, public transport in the area, finding places in the area to stay, and planning events for the trip easier.
