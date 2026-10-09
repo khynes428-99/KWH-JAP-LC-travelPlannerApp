@@ -29,6 +29,7 @@ This document identifies risks that may affect the successful completion of the 
 | Risk ID | Category | Risk Description | Probability | Impact | Mitigation Strategy | Owner | Status |
 |----------|------------|-----------------|-------------|---------|---------------------|--------|---------|
 | R-01 | Technical | Team has limited experience with JavaFX. | M | H | Build a prototype for each feature before implementation begins. | Jacob | Open |
+| R-02 | Other | Weather, Loss of Power, and other uncontrollable events | M | M | Update the work schedule to accommodate affected team members. | Levi | Open | 
 
 
 ## Risk Review History
