@@ -5,4 +5,4 @@
 
 | Product Backlog ID | Requirement | User Story | Priority |
 |----|-------------------------|------------|---------|
-| PB-01 | | []
+| PB-01 | FR1 - User Registration | US-01 User Registration | High |
