@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="QBGQzlgBd_7u7NKZwv3k">
+    <mxGraphModel dx="1451" dy="792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6YL_m68T7dOSaXTeq_gW-1" parent="1" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;aspect=fixed;" value="START" vertex="1">
+          <mxGeometry height="80" width="80" x="380" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rFhwv0d0aXCnAX0RRIsJ-4" edge="1" parent="1" source="6YL_m68T7dOSaXTeq_gW-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="6YL_m68T7dOSaXTeq_gW-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6YL_m68T7dOSaXTeq_gW-2" parent="1" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" value="Open Travel Planner Software" vertex="1">
+          <mxGeometry height="80" width="160" x="340" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="rFhwv0d0aXCnAX0RRIsJ-3" edge="1" parent="1" source="6YL_m68T7dOSaXTeq_gW-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="rFhwv0d0aXCnAX0RRIsJ-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6YL_m68T7dOSaXTeq_gW-4" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Do They Already have An Account?" vertex="1">
+          <mxGeometry height="80" width="160" x="340" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="rFhwv0d0aXCnAX0RRIsJ-9" edge="1" parent="1" source="6YL_m68T7dOSaXTeq_gW-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="6YL_m68T7dOSaXTeq_gW-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6YL_m68T7dOSaXTeq_gW-5" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="Yes" vertex="1">
+          <mxGeometry height="80" width="120" x="180" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="rFhwv0d0aXCnAX0RRIsJ-7" edge="1" parent="1" source="6YL_m68T7dOSaXTeq_gW-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="6YL_m68T7dOSaXTeq_gW-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6YL_m68T7dOSaXTeq_gW-6" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="No" vertex="1">
+          <mxGeometry height="80" width="120" x="520" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="rFhwv0d0aXCnAX0RRIsJ-8" edge="1" parent="1" source="6YL_m68T7dOSaXTeq_gW-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="6YL_m68T7dOSaXTeq_gW-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6YL_m68T7dOSaXTeq_gW-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Prompt the user to create an account" vertex="1">
+          <mxGeometry height="70" width="120" x="520" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="rFhwv0d0aXCnAX0RRIsJ-10" edge="1" parent="1" source="6YL_m68T7dOSaXTeq_gW-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="6YL_m68T7dOSaXTeq_gW-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6YL_m68T7dOSaXTeq_gW-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Log in" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="rFhwv0d0aXCnAX0RRIsJ-11" edge="1" parent="1" source="6YL_m68T7dOSaXTeq_gW-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="6YL_m68T7dOSaXTeq_gW-20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6YL_m68T7dOSaXTeq_gW-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Select Create Trip Itenerary" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="rFhwv0d0aXCnAX0RRIsJ-13" edge="1" parent="1" source="6YL_m68T7dOSaXTeq_gW-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="6YL_m68T7dOSaXTeq_gW-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6YL_m68T7dOSaXTeq_gW-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Choose a Destination" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="6YL_m68T7dOSaXTeq_gW-21" edge="1" parent="1" source="6YL_m68T7dOSaXTeq_gW-18" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6YL_m68T7dOSaXTeq_gW-20" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="920" as="sourcePoint" />
+            <mxPoint x="490" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rFhwv0d0aXCnAX0RRIsJ-14" edge="1" parent="1" source="6YL_m68T7dOSaXTeq_gW-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="6YL_m68T7dOSaXTeq_gW-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6YL_m68T7dOSaXTeq_gW-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Choose Flights" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="6YL_m68T7dOSaXTeq_gW-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Pick hotels in the area" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="rFhwv0d0aXCnAX0RRIsJ-5" edge="1" parent="1" source="rFhwv0d0aXCnAX0RRIsJ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="6YL_m68T7dOSaXTeq_gW-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rFhwv0d0aXCnAX0RRIsJ-6" edge="1" parent="1" source="rFhwv0d0aXCnAX0RRIsJ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="6YL_m68T7dOSaXTeq_gW-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rFhwv0d0aXCnAX0RRIsJ-1" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="" vertex="1">
+          <mxGeometry height="80" width="80" x="380" y="480" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
