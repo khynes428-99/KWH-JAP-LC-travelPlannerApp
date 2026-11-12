@@ -1,7 +1,6 @@
 # Sprint 2 planning
 ## Sprint Goal
-The main Goal of this sprint is to start developing a working login system for our travel planner, first we will create the login screen with password protection then
-setup the flight options.
+The main Goal of this sprint is to start developing a working login system for our travel planner, first we will create the login screen with password protection and require authorization
 
 ## Selected Product Backlog Tasks
 - Store User Information
