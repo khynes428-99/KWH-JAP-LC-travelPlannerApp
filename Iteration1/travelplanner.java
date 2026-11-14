@@ -1,9 +1,11 @@
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 public class travelplanner {
 
     public static void main(String[] args) {
+
+        accountcreation accounts = new accountcreation();
 
         JFrame frame = new JFrame("Login");
         frame.setSize(450, 150);
@@ -30,9 +32,11 @@ public class travelplanner {
         // Centered button underneath
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
 
-        JButton confirmButton = new JButton("Confirm");
+        JButton loginButton = new JButton("Login");
 
-        confirmButton.addActionListener(e -> {
+        JButton createAccountButton = new JButton("Create Account");
+
+        loginButton.addActionListener(e -> {
             String username = usernameField.getText();
             String password = new String(passwordField.getPassword());
 
@@ -40,7 +44,18 @@ public class travelplanner {
             System.out.println("Password: " + password);
         });
 
-        buttonPanel.add(confirmButton);
+        createAccountButton.addActionListener(e -> {
+
+            String username = usernameField.getText();
+            char[] password = passwordField.getPassword();
+            String result = accounts.createAccount(username, password);
+
+            JOptionPane.showMessageDialog(frame, result);
+        });
+
+        buttonPanel.add(loginButton);
+        buttonPanel.add(createAccountButton);
+
 
         frame.add(fieldsPanel, BorderLayout.CENTER);
         frame.add(buttonPanel, BorderLayout.SOUTH);
@@ -49,6 +64,7 @@ public class travelplanner {
         frame.setVisible(true);
     }
 }
+
 
 /* Please add the following:
 Authentication (Verify username and password) 
