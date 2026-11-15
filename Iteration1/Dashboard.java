@@ -1,9 +1,13 @@
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 public class Dashboard {
     public static void main(String[]args) {
 
+        showDashboard();
+
+    }
+    public static void showDashboard() {
         JFrame frame = new JFrame("Travel Planner");
         frame.setSize(700,500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
