@@ -36,12 +36,31 @@ public class travelplanner {
 
         JButton createAccountButton = new JButton("Create Account");
 
-        loginButton.addActionListener(e -> {
+       loginButton.addActionListener(e -> {
+
             String username = usernameField.getText();
-            String password = new String(passwordField.getPassword());
+            char[] password = passwordField.getPassword();
+
 
             System.out.println("Username: " + username);
-            System.out.println("Password: " + password);
+            System.out.println ("Password: " + new String(password));
+
+            boolean loginSuccessful = accounts.verifyAccount(username, password);
+
+        if (loginSuccessful) {
+
+                System.out.println("Login Successful");
+
+                frame.dispose();
+
+                Dashboard.main(new String[]{});
+
+            } else {
+
+                JOptionPane.showMessageDialog(
+                    frame, "Incorrect username or password"
+                );
+            }
         });
 
         createAccountButton.addActionListener(e -> {
