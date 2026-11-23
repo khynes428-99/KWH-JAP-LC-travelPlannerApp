@@ -5,6 +5,10 @@ import java.util.Arrays;
 import java.util.HashMap;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
+import java.io.*;
+import java.nio.file.*;
+import java.util.Base64;
+import java.util.Properties;
 
 public class accountcreation {
 
@@ -12,6 +16,14 @@ public class accountcreation {
     private HashMap<String, Account> accounts = new HashMap<>();
 
     private SecureRandom random = new SecureRandom();
+
+    private static final Path ACCOUNT_FILE =
+    Path.of("accounts.properties");
+
+public accountcreation() {
+
+    loadAccounts();
+}
 
     // store user information
     private static class Account {
@@ -58,7 +70,16 @@ public class accountcreation {
 
         accounts.put(username, newAccount);
 
-        return "Account created successfully!";
+        try {
+            saveAccounts();
+
+            } catch (IOException e) {
+                 accounts.remove(username);
+             return "Error: Account could not be saved";
+    }
+
+return "Account created successfully!";
+
     }
 
     public boolean verifyAccount(String username, char[] password) {
@@ -105,4 +126,65 @@ public class accountcreation {
             spec.clearPassword();
         }
     }
+
+
+private void saveAccounts() throws IOException {
+
+    Properties saved = new Properties();
+
+    for (Account account : accounts.values()) {
+
+        String salt = Base64.getEncoder()
+            .encodeToString(account.salt);
+
+        String hash = Base64.getEncoder()
+            .encodeToString(account.passwordHash);
+
+        saved.setProperty(account.username, salt + ":" + hash);
+    }
+
+    Path temporaryFile = Path.of("accounts.properties.tmp");
+
+    try (OutputStream output = Files.newOutputStream(temporaryFile)) {
+        saved.store(output, "Travel Planner accounts");
+    }
+
+    Files.move(
+        temporaryFile,
+        ACCOUNT_FILE,
+        StandardCopyOption.REPLACE_EXISTING
+    );
+}
+
+private void loadAccounts() {
+
+    if (Files.notExists(ACCOUNT_FILE)) {
+        return;
+    }
+
+    Properties saved = new Properties();
+
+    try (InputStream input = Files.newInputStream(ACCOUNT_FILE)) {
+
+        saved.load(input);
+
+        for (String username : saved.stringPropertyNames()) {
+
+            String[] values = saved.getProperty(username).split(":", 2);
+
+            if (values.length != 2) {
+                throw new IOException("Invalid account record");
+            }
+
+            byte[] salt = Base64.getDecoder().decode(values[0]);
+            byte[] hash = Base64.getDecoder().decode(values[1]);
+
+            accounts.put(username, new Account(username, hash, salt));
+        }
+
+    } catch (IOException | IllegalArgumentException e) {
+        throw new IllegalStateException("Unable to load accounts", e);
+    }
+}
+
 }
