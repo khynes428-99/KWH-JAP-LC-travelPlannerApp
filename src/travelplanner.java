@@ -7,6 +7,10 @@ public class travelplanner {
 
         accountcreation accounts = new accountcreation();
 
+         showLogin(accounts);
+    }
+     public static void showLogin(accountcreation accounts) {
+
         JFrame frame = new JFrame("Login");
         frame.setSize(450, 150);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -36,32 +40,37 @@ public class travelplanner {
 
         JButton createAccountButton = new JButton("Create Account");
 
-       loginButton.addActionListener(e -> {
+                
+loginButton.addActionListener(e -> {
 
-            String username = usernameField.getText();
-            char[] password = passwordField.getPassword();
+    // Get the username and password from the text fields
+    String username = usernameField.getText().trim().toLowerCase();
+    char[] password = passwordField.getPassword();
 
+    // Check if the username and password are correct
+    boolean loginSuccessful = accounts.verifyAccount(username, password);
 
-            System.out.println("Username: " + username);
-            System.out.println ("Password: " + new String(password));
+    // Clear the password after checking it
+    java.util.Arrays.fill(password, '\0');
+    passwordField.setText("");
 
-            boolean loginSuccessful = accounts.verifyAccount(username, password);
+    if (loginSuccessful) {
 
-        if (loginSuccessful) {
+        
+        frame.dispose();
 
-                System.out.println("Login Successful");
+        // Open the dashboard
+        Dashboard.showDashboard(accounts, username);
 
-                frame.dispose();
+    } else {
 
-                Dashboard.main(new String[]{});
-
-            } else {
-
-                JOptionPane.showMessageDialog(
-                    frame, "Incorrect username or password"
-                );
-            }
-        });
+        JOptionPane.showMessageDialog(
+            frame, "Incorrect username or password"
+        );
+    }
+}
+);
+           
 
         createAccountButton.addActionListener(e -> {
 
@@ -85,8 +94,4 @@ public class travelplanner {
 }
 
 
-/* Please add the following:
-Authentication (Verify username and password) 
-Obfuscate passwords
-Open new window on successful login
-*/ 
+

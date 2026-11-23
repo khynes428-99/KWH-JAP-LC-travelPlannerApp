@@ -2,12 +2,11 @@ import java.awt.*;
 import javax.swing.*;
 
 public class Dashboard {
-    public static void main(String[]args) {
 
-        showDashboard();
+        public static void showDashboard(
+            accountcreation accounts, String username) {
 
-    }
-    public static void showDashboard() {
+    
         JFrame frame = new JFrame("Travel Planner");
         frame.setSize(700,500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -67,9 +66,33 @@ public class Dashboard {
     buttonPanel.add(hotelButton);
     buttonPanel.add(flightButton);
     buttonPanel.add(viewItineraryButton);
+    
+     
+    JPanel accountPanel = new JPanel();
+    accountPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
+
+    
+    JButton accountButton = new JButton("Account");
+    accountButton.setFont(new Font("Arial", Font.BOLD, 18));
+
+    
+    accountPanel.add(accountButton);
+
+    
+   
+accountButton.addActionListener(e -> {
+
+    
+    frame.dispose();
+
+    
+    AccountPage.showAccountPage(accounts, username);
+
+});
 
     frame.add(header, BorderLayout.NORTH);
     frame.add(buttonPanel, BorderLayout.CENTER);
+    frame.add(accountPanel, BorderLayout.SOUTH);
 
     frame.setLocationRelativeTo(null);
     frame.setVisible(true);
