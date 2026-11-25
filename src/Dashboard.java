@@ -48,7 +48,7 @@ public class Dashboard {
     });
 
         hotelButton.addActionListener(e -> {
-            JOptionPane.showMessageDialog(frame, "hotel button hit");
+            FindHotels.showHotels();
 
     });
 
